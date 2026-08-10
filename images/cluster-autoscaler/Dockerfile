@@ -1,4 +1,4 @@
-FROM registry.ci.openshift.org/openshift/release:golang-1.16 AS builder
+FROM quay-proxy.ci.openshift.org/openshift/ci:openshift_release_golang-1.16 AS builder
 WORKDIR /go/src/k8s.io/autoscaler
 COPY . .
 WORKDIR /go/src/k8s.io/autoscaler/cluster-autoscaler
